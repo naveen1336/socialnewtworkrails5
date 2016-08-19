@@ -15,6 +15,10 @@ has_many :inverse_friendships, :class_name => "Friendship", :foreign_key => "fri
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
+validates :name,:email,:username, :presence => true
+validates :username,:email, :uniqueness => true
+
+
 
 def feed
     Post.where("user_id IN (:friend_ids) OR user_id = :user_id",

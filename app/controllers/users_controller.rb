@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
 	#before_action :findbyid, except: [:create,:login]
 
+def welcome
+render "welcome to the admin pannel"
+end
 
 
 def friends

@@ -12,6 +12,7 @@ permit_params :name,:email,:username,:password_digest
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+
 index do
     
     id_column
