@@ -31,6 +31,7 @@ def accept
 if @a
 render :json =>  {
       :responseCode => 200,
+      :responseMessage => "friend request accepted"
       :result => @a 
       
      }
